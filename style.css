@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  background-color: #f6f2e7;
+  color: #10241e;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: #0f4d3f;
+  color: #f6f2e7;
+  position: sticky;
+  top: 0;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 14px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #e3b04b;
+}
+
+nav a {
+  margin-left: 18px;
+  text-decoration: none;
+  color: #f6f2e7;
+}
+
+nav a:hover {
+  color: #e3b04b;
+}
+
+/* Hero */
+.hero {
+  padding: 70px 0;
+}
+
+.hero p {
+  margin: 0;
+}
+
+.hello {
+  color: #9a6f14;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 80px;
+  line-height: 1;
+  margin: 10px 0 20px 0;
+}
+
+.role {
+  font-size: 22px;
+  max-width: 500px;
+  color: #4f625b;
+}
+
+.btn {
+  display: inline-block;
+  margin: 25px 10px 0 0;
+  padding: 12px 26px;
+  border: 2px solid #0f4d3f;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-fill {
+  background-color: #0f4d3f;
+  color: #f6f2e7;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+  border-top: 1px solid #d9d2bd;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 0 0 20px 0;
+}
+
+/* About */
+.about-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about-text {
+  flex: 1 1 300px;
+}
+
+.facts {
+  flex: 1 1 300px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fffdf6;
+  border: 1px solid #d9d2bd;
+  border-radius: 12px;
+}
+
+.facts li {
+  padding: 14px 18px;
+  border-bottom: 1px solid #d9d2bd;
+}
+
+.facts li:last-child {
+  border-bottom: none;
+}
+
+/* Roadmap */
+.roadmap {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 20px;
+  border-left: 4px solid #d9d2bd;
+}
+
+.roadmap li {
+  padding: 0 0 20px 15px;
+}
+
+.roadmap h3 {
+  margin: 0;
+}
+
+.roadmap p {
+  margin: 4px 0 0 0;
+  color: #4f625b;
+}
+
+.done {
+  border-left: 4px solid #0f4d3f;
+  margin-left: -24px;
+  padding-left: 35px;
+}
+
+.now {
+  border-left: 4px solid #e3b04b;
+  margin-left: -24px;
+  padding-left: 35px;
+}
+
+.status {
+  font-size: 14px;
+  color: #9a6f14;
+}
+
+/* Projects */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 260px;
+  background-color: #fffdf6;
+  border: 1px solid #d9d2bd;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+}
+
+.card p {
+  margin: 0 0 12px 0;
+  color: #4f625b;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 14px;
+  padding: 2px 10px;
+  margin-right: 5px;
+  border: 1px solid #d9d2bd;
+  border-radius: 20px;
+}
+
+/* Contact */
+.contact-box {
+  background-color: #0f4d3f;
+  color: #f6f2e7;
+  padding: 40px 25px;
+  border-radius: 16px;
+}
+
+.contact-box .btn {
+  background-color: #e3b04b;
+  color: #10241e;
+  border-color: #e3b04b;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px 0;
+  color: #4f625b;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .role {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  nav {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  nav a {
+    margin: 0 14px 0 0;
+  }
+}
